@@ -1,15 +1,16 @@
 # AI usage
 
-<!-- Replace every comment below with your own words. Short is fine. The grader checks only
-     that this file exists and has been changed from this template; your Track Mentor reads it. -->
-
 ## Tools I used, and for which functions
+I used Claude to write the first versions of `audit()` and all six functions in `metrics.py`. It also helped write the tests in `test_mine.py`.
 
-<!-- e.g. "Claude for a first draft of audit(); Copilot autocomplete in metrics.py" -->
+I asked it what should be included in `FRAMING.md`, and then I wrote it on my own.
+
+I ran the tests and the sample audit myself, and then I checked the results against the required specs in the README.
 
 ## One place where the AI was wrong, incomplete, or not what the spec said
+Claude assumed a rate of 200 transfers a second, whereas the Rawaj company brief says the peak so far was 64 transfers per second. I corrected the AI on this later.
 
-<!-- What did it produce, and how did you notice: a test, the docs, or your own reasoning? -->
+There was also a self-contradiction. It first said that nothing is automatically blocked, but then said that a wrong flag freezes the customer.
 
 ## The function I wrote without AI, and why
 
